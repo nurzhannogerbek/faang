@@ -4,7 +4,4 @@ class Solution:
         for character in original_string:
             if character.isdigit():
                 basket.add(int(character))
-        if len(basket) > 1:
-            return sorted(basket)[-2]
-        else:
-            return -1
+        return sorted(basket)[-2] if len(basket) > 1 else -1
