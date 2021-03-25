@@ -1,7 +1,5 @@
 class Solution:
     def secondHighest(self, original_string: str) -> int:
-        basket = set()
-        for character in original_string:
-            if character.isdigit():
-                basket.add(int(character))
-        return sorted(basket)[-2] if len(basket) > 1 else -1
+        digits = [character for character in original_string if character.isdigit()]
+        digits = sorted(set(digits))
+        return digits[-2] if len(digits) > 1 else -1
