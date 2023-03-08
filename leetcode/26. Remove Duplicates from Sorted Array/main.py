@@ -7,8 +7,8 @@ class Solution:
         for i in range(1, size):
             # Found unique element.
             if nums[i - 1] != nums[i]:
-                # Updating insertIndex in our main array.
+                # Updating insert_index in our main array.
                 nums[insert_index] = nums[i]
-                # Incrementing insertIndex count by 1.
+                # Incrementing insert_index count by 1.
                 insert_index += 1
         return insert_index
