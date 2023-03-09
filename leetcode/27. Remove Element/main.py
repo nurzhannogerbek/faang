@@ -2,8 +2,7 @@ class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         # Two Pointers Approach.
         reader, writer = 0, 0
-        n = len(nums)
-        while reader < n :
+        while reader < len(nums) :
             if nums[reader] == val:
                 reader += 1
             else:
