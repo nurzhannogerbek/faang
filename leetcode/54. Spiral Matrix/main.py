@@ -32,4 +32,5 @@ class Solution:
             up += 1
             down -= 1
 
+        # Return the output array.
         return result
